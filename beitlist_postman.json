@@ -1,0 +1,2316 @@
+{
+  "info": {
+    "_postman_id": "50d0a7a3-5596-466d-b843-ba4251101d0a",
+    "name": "beitlist",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "27053708"
+  },
+  "item": [
+    {
+      "name": "ContactUs",
+      "item": [
+        {
+          "name": "ReviewAllMessages",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/contacts/list",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "contacts",
+                "list"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreateMessage",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n        \"name\": \"andrew\",\r\n        \"phone\": \"01234567890\",\r\n        \"email\": \"andrew@gmail.com\",\r\n        \"message\": \"violance\"\r\n    }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/contacts/create",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "contacts",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateMessage",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n        \"name\": \"kero\",\r\n        \"phone\": \"01234567890\",\r\n        \"email\": \"andrew@gmail.com\",\r\n        \"message\": \"violance\"\r\n    }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/contacts/update/900",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "contacts",
+                "update",
+                "900"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReviewOneMessage",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/contacts/show/5000",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "contacts",
+                "show",
+                "5000"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeleteMessage",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/contacts/delete/1000",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "contacts",
+                "delete",
+                "1000"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Reasons",
+      "item": [
+        {
+          "name": "ShowReason",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/reasons/show/2",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "reasons",
+                "show",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AddReason",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\":\"other\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/reasons/add",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "reasons",
+                "add"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "AboutUs",
+      "item": [
+        {
+          "name": "ReviewAboutUs",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/statics/about-us",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "statics",
+                "about-us"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreateAboutUs",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "value": "title 2",
+                  "type": "text"
+                },
+                {
+                  "key": "title_ar",
+                  "value": "\u0633\u064a\u0628\u0633\u064a\u0628\u0633\u064a\u0628",
+                  "type": "text"
+                },
+                {
+                  "key": "pre_title",
+                  "value": "dfsdfa",
+                  "type": "text"
+                },
+                {
+                  "key": "pre_title_ar",
+                  "value": "\u0634\u064a\u0628\u0633\u064a\u0628\u0633\u064a\u0628\u0633\u0628\u0633\u064a\u0628\u0633\u064a\u0628\u0633\u064a\u0628\u0633\u064a\u0628",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "ssdfghjklkjhgfdsdfghjklkjhgf",
+                  "type": "text"
+                },
+                {
+                  "key": "description_ar",
+                  "value": "fddfgdfgdfgdfgd",
+                  "type": "text"
+                },
+                {
+                  "key": "image",
+                  "type": "file",
+                  "src": "/C:/Users/kerol/Downloads/OIP.jpg"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/statics/about-us/create",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "statics",
+                "about-us",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateAboutUs",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "value": "cvb",
+                  "type": "text"
+                },
+                {
+                  "key": "title_ar",
+                  "value": "dsdcsd",
+                  "type": "text"
+                },
+                {
+                  "key": "pre_title",
+                  "value": "sdcsdc",
+                  "type": "text"
+                },
+                {
+                  "key": "pre_title_ar",
+                  "value": "dc",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "sdc",
+                  "type": "text"
+                },
+                {
+                  "key": "description_ar",
+                  "value": "xcvxcv",
+                  "type": "text"
+                },
+                {
+                  "key": "image",
+                  "type": "file",
+                  "src": "/C:/Users/kerol/Downloads/OIP (1).jpg"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/statics/about-us/update/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "statics",
+                "about-us",
+                "update",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "UserReview",
+      "item": [
+        {
+          "name": "GetAllReviews",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{apiUrl}}/api/reviews/list",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "reviews",
+                "list"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ShowAReview",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{apiUrl}}/api/reviews/show/1333",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "reviews",
+                "show",
+                "1333"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AddReview",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5MzkyNjAwOCwiZXhwIjoxNjk1NDM4MDA4LCJuYmYiOjE2OTM5MjYwMDgsImp0aSI6IkNka1lOWnZ0R1I4OFBvWkEiLCJzdWIiOjEzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.6Ju1Ki8T66pHWO5sKR5PN7SZ0MCy58cb6OsPot_VJtE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"comment\": \"tst\",\r\n    \"rating\": 2,\r\n    \"user_to_id\": 13\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{apiUrl}}/api/reviews/create",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "reviews",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateReview",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"comment\": \"tst\",\r\n    \"rating\": 1,\r\n    \"user_to_id\": 12\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{apiUrl}}/api/reviews/update/1",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "reviews",
+                "update",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Myreviews",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5MzkyNjAwOCwiZXhwIjoxNjk1NDM4MDA4LCJuYmYiOjE2OTM5MjYwMDgsImp0aSI6IkNka1lOWnZ0R1I4OFBvWkEiLCJzdWIiOjEzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.6Ju1Ki8T66pHWO5sKR5PN7SZ0MCy58cb6OsPot_VJtE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{apiUrl}}/api/users/reviews",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "users",
+                "reviews"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeleteReview",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{apiUrl}}/api/reviews/1/delete",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "reviews",
+                "1",
+                "delete"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "register",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"fullname\": \"kyrillos\",\r\n    \"email\": \"kkk@gmail.com\",\r\n    \"phonenumber\": \"012025502657525\",\r\n    \"password\": 123456789,\r\n    \"usertype\" : 1,\r\n    \"email_contact\":0,\r\n    \"phone_contact\":0,\r\n    \"whatsapp_contact\":0\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{apiUrl}}/api/register",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "login",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"kkk@gmail.com\",\r\n    \"password\": \"123456789\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{apiUrl}}/api/login",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Profile",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5MzkyNjAwOCwiZXhwIjoxNjk1NDM4MDA4LCJuYmYiOjE2OTM5MjYwMDgsImp0aSI6IkNka1lOWnZ0R1I4OFBvWkEiLCJzdWIiOjEzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.6Ju1Ki8T66pHWO5sKR5PN7SZ0MCy58cb6OsPot_VJtE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{apiUrl}}/api/users/profile",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "users",
+                "profile"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateProfile",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5MzkyNjAwOCwiZXhwIjoxNjk1NDM4MDA4LCJuYmYiOjE2OTM5MjYwMDgsImp0aSI6IkNka1lOWnZ0R1I4OFBvWkEiLCJzdWIiOjEzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.6Ju1Ki8T66pHWO5sKR5PN7SZ0MCy58cb6OsPot_VJtE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "subscribtion_id",
+                  "value": "3",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{apiUrl}}/api/users/update/profile",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "users",
+                "update",
+                "profile"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5MjY5NTczMSwiZXhwIjoxNjk0MjA3NzMxLCJuYmYiOjE2OTI2OTU3MzEsImp0aSI6ImdPaEVFMHEycmdPWmJIQ0IiLCJzdWIiOjMsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.7GO0KR-8NI0RBkssQz_Skf9tFVeMSFqVzP1NTo9C2cQ",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{apiUrl}}/api/logout",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "logout"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "changepassword",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5MzkyNjAwOCwiZXhwIjoxNjk1NDM4MDA4LCJuYmYiOjE2OTM5MjYwMDgsImp0aSI6IkNka1lOWnZ0R1I4OFBvWkEiLCJzdWIiOjEzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.6Ju1Ki8T66pHWO5sKR5PN7SZ0MCy58cb6OsPot_VJtE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "currentPassword",
+                  "value": "123456789",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "123456789K",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{apiUrl}}/api/users/change-password",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "users",
+                "change-password"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "ListUsers",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5Mjc3NjMwOCwiZXhwIjoxNjk0Mjg4MzA4LCJuYmYiOjE2OTI3NzYzMDgsImp0aSI6Im56YzBjWDlYMWFFb25sQWMiLCJzdWIiOjMsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.JLdbh1t6xaWrtsFeJLvCsuoa3v_5mkn32jmBblcEzK0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{apiUrl}}/api/users/list",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "users",
+                "list"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Listing",
+      "item": [
+        {
+          "name": "showListing",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{apiUrl}}/api/properties/list?page=1&perPage=2",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "properties",
+                "list"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "perPage",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AddListing",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5MzkyNjAwOCwiZXhwIjoxNjk1NDM4MDA4LCJuYmYiOjE2OTM5MjYwMDgsImp0aSI6IkNka1lOWnZ0R1I4OFBvWkEiLCJzdWIiOjEzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.6Ju1Ki8T66pHWO5sKR5PN7SZ0MCy58cb6OsPot_VJtE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "hjfgh",
+                  "type": "text"
+                },
+                {
+                  "key": "name_ar",
+                  "value": "fghfgh",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "fgfg",
+                  "type": "text"
+                },
+                {
+                  "key": "description_ar",
+                  "value": "fghf",
+                  "type": "text"
+                },
+                {
+                  "key": "type",
+                  "value": "1",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "bathrooms",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "bedrooms",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "location_id",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "size",
+                  "value": "21",
+                  "type": "text"
+                },
+                {
+                  "key": "propertytype_id",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "view",
+                  "value": "asda",
+                  "type": "text"
+                },
+                {
+                  "key": "price",
+                  "value": "10000",
+                  "type": "text"
+                },
+                {
+                  "key": "thumbnail",
+                  "type": "file",
+                  "src": "/C:/Users/kerol/Downloads/OIP.jpg"
+                },
+                {
+                  "key": "cover",
+                  "type": "file",
+                  "src": "/C:/Users/kerol/Downloads/OIP (1).jpg"
+                },
+                {
+                  "key": "images[]",
+                  "type": "file",
+                  "src": [
+                    "/C:/Users/kerol/Downloads/OIP (1).jpg",
+                    "/C:/Users/kerol/Downloads/OIP.jpg"
+                  ]
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{apiUrl}}/api/properties/create",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "properties",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateList",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5MzkyNjAwOCwiZXhwIjoxNjk1NDM4MDA4LCJuYmYiOjE2OTM5MjYwMDgsImp0aSI6IkNka1lOWnZ0R1I4OFBvWkEiLCJzdWIiOjEzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.6Ju1Ki8T66pHWO5sKR5PN7SZ0MCy58cb6OsPot_VJtE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "andy",
+                  "type": "text"
+                },
+                {
+                  "key": "name_ar",
+                  "value": "slkdhskdl",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "kjbkjnbkj",
+                  "type": "text"
+                },
+                {
+                  "key": "description_ar",
+                  "value": "dsfsdf",
+                  "type": "text"
+                },
+                {
+                  "key": "bedrooms",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "bathrooms",
+                  "value": "2",
+                  "type": "text"
+                },
+                {
+                  "key": "location_id",
+                  "value": "2",
+                  "type": "text"
+                },
+                {
+                  "key": "size",
+                  "value": "35",
+                  "type": "text"
+                },
+                {
+                  "key": "view",
+                  "value": "asfasd",
+                  "type": "text"
+                },
+                {
+                  "key": "price",
+                  "value": "20020",
+                  "type": "text"
+                },
+                {
+                  "key": "map",
+                  "value": "fsdfhjk",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "propertytype_id",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "thumbnail",
+                  "type": "file",
+                  "src": "/C:/Users/kerol/Downloads/OIP.jpg"
+                },
+                {
+                  "key": "cover",
+                  "type": "file",
+                  "src": "/C:/Users/kerol/Downloads/OIP (1).jpg"
+                },
+                {
+                  "key": "images[]",
+                  "type": "file",
+                  "src": "/C:/Users/kerol/Downloads/OIP (1).jpg",
+                  "disabled": true
+                },
+                {
+                  "key": "id",
+                  "value": "94",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{apiUrl}}/api/properties/update",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "properties",
+                "update"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "SortList",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{apiUrl}}/api/properties/sort?sortBy=price_asc&pagenumber=3",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "properties",
+                "sort"
+              ],
+              "query": [
+                {
+                  "key": "sortBy",
+                  "value": "price_asc"
+                },
+                {
+                  "key": "pagenumber",
+                  "value": "3"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeleteImages",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5Mjc3NjMwOCwiZXhwIjoxNjk0Mjg4MzA4LCJuYmYiOjE2OTI3NzYzMDgsImp0aSI6Im56YzBjWDlYMWFFb25sQWMiLCJzdWIiOjMsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.JLdbh1t6xaWrtsFeJLvCsuoa3v_5mkn32jmBblcEzK0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{apiUrl}}/api/properties/1/delete-images",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "properties",
+                "1",
+                "delete-images"
+              ],
+              "query": [
+                {
+                  "key": "offset",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "limit",
+                  "value": "10",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PendingList",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{apiUrl}}/api/properties/list/pending?offset=1&limit=2",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "properties",
+                "list",
+                "pending"
+              ],
+              "query": [
+                {
+                  "key": "offset",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ListingSearch",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5Mjc3NjMwOCwiZXhwIjoxNjk0Mjg4MzA4LCJuYmYiOjE2OTI3NzYzMDgsImp0aSI6Im56YzBjWDlYMWFFb25sQWMiLCJzdWIiOjMsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.JLdbh1t6xaWrtsFeJLvCsuoa3v_5mkn32jmBblcEzK0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{apiUrl}}/api/properties/search?propertytype=1&minPrice=0&maxPrice=100000&minArea=20&maxArea=22&bathrooms=1&type=2&location_id=1&compound_id=1&description=fgfg&outdoors=garden&features=1&perPage=1&sortBy=price_desc",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "properties",
+                "search"
+              ],
+              "query": [
+                {
+                  "key": "propertytype",
+                  "value": "1"
+                },
+                {
+                  "key": "minPrice",
+                  "value": "0"
+                },
+                {
+                  "key": "maxPrice",
+                  "value": "100000"
+                },
+                {
+                  "key": "minArea",
+                  "value": "20"
+                },
+                {
+                  "key": "maxArea",
+                  "value": "22"
+                },
+                {
+                  "key": "bathrooms",
+                  "value": "1"
+                },
+                {
+                  "key": "type",
+                  "value": "2"
+                },
+                {
+                  "key": "location_id",
+                  "value": "1"
+                },
+                {
+                  "key": "compound_id",
+                  "value": "1"
+                },
+                {
+                  "key": "description",
+                  "value": "fgfg"
+                },
+                {
+                  "key": "outdoors",
+                  "value": "garden"
+                },
+                {
+                  "key": "features",
+                  "value": "1"
+                },
+                {
+                  "key": "perPage",
+                  "value": "1"
+                },
+                {
+                  "key": "sortBy",
+                  "value": "price_desc"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "MyListing",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5MzkyNjAwOCwiZXhwIjoxNjk1NDM4MDA4LCJuYmYiOjE2OTM5MjYwMDgsImp0aSI6IkNka1lOWnZ0R1I4OFBvWkEiLCJzdWIiOjEzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.6Ju1Ki8T66pHWO5sKR5PN7SZ0MCy58cb6OsPot_VJtE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{apiUrl}}/api/users/properties",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "users",
+                "properties"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Subscribtion",
+      "item": [
+        {
+          "name": "GetAllSubscribtions",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{apiUrl}}/api/subscribtions/list",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "subscribtions",
+                "list"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreateSubscribtion",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5Mjc3NjMwOCwiZXhwIjoxNjk0Mjg4MzA4LCJuYmYiOjE2OTI3NzYzMDgsImp0aSI6Im56YzBjWDlYMWFFb25sQWMiLCJzdWIiOjMsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.JLdbh1t6xaWrtsFeJLvCsuoa3v_5mkn32jmBblcEzK0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"five\",\r\n    \"name_ar\": \"five\",\r\n    \"price\": 200,\r\n    \"listsno\" :5\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{apiUrl}}/api/subscribtions/create",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "subscribtions",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeleteSubscribtion",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5Mjc3NjMwOCwiZXhwIjoxNjk0Mjg4MzA4LCJuYmYiOjE2OTI3NzYzMDgsImp0aSI6Im56YzBjWDlYMWFFb25sQWMiLCJzdWIiOjMsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.JLdbh1t6xaWrtsFeJLvCsuoa3v_5mkn32jmBblcEzK0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\": 2,\r\n    \"name\": \"kero\",\r\n    \"name_ar\": \"keero\",\r\n    \"price\": 200\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{apiUrl}}/api/subscribtions/delete/1",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "subscribtions",
+                "delete",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ShowOneSubscribtion",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5Mjc3NjMwOCwiZXhwIjoxNjk0Mjg4MzA4LCJuYmYiOjE2OTI3NzYzMDgsImp0aSI6Im56YzBjWDlYMWFFb25sQWMiLCJzdWIiOjMsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.JLdbh1t6xaWrtsFeJLvCsuoa3v_5mkn32jmBblcEzK0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{apiUrl}}/api/subscibtions/show/1",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "subscibtions",
+                "show",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateSubscribtion",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5Mjc3NjMwOCwiZXhwIjoxNjk0Mjg4MzA4LCJuYmYiOjE2OTI3NzYzMDgsImp0aSI6Im56YzBjWDlYMWFFb25sQWMiLCJzdWIiOjMsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.JLdbh1t6xaWrtsFeJLvCsuoa3v_5mkn32jmBblcEzK0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"kero\",\r\n    \"name_ar\": \"keero\",\r\n    \"listsno\": 1,\r\n    \"price\": 200\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{apiUrl}}/api/subscribtions/update/1",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "subscribtions",
+                "update",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Reports",
+      "item": [
+        {
+          "name": "AllReports",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5Mjc3NjMwOCwiZXhwIjoxNjk0Mjg4MzA4LCJuYmYiOjE2OTI3NzYzMDgsImp0aSI6Im56YzBjWDlYMWFFb25sQWMiLCJzdWIiOjMsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.JLdbh1t6xaWrtsFeJLvCsuoa3v_5mkn32jmBblcEzK0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{apiUrl}}/api/property/reports",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "property",
+                "reports"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreateReport",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5Mjc3NjMwOCwiZXhwIjoxNjk0Mjg4MzA4LCJuYmYiOjE2OTI3NzYzMDgsImp0aSI6Im56YzBjWDlYMWFFb25sQWMiLCJzdWIiOjMsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.JLdbh1t6xaWrtsFeJLvCsuoa3v_5mkn32jmBblcEzK0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "body",
+                  "value": "test body",
+                  "type": "text"
+                },
+                {
+                  "key": "property_id",
+                  "value": "1",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{apiUrl}}/api/proerty/reports/create",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "proerty",
+                "reports",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateReport",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5Mjc3NjMwOCwiZXhwIjoxNjk0Mjg4MzA4LCJuYmYiOjE2OTI3NzYzMDgsImp0aSI6Im56YzBjWDlYMWFFb25sQWMiLCJzdWIiOjMsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.JLdbh1t6xaWrtsFeJLvCsuoa3v_5mkn32jmBblcEzK0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "body",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "property_id",
+                  "value": "1",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{apiUrl}}/api/proerty/reports/update/1",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "proerty",
+                "reports",
+                "update",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Company",
+      "item": [
+        {
+          "name": "DeleteACompany",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5MzQ5MTk2MCwiZXhwIjoxNjk1MDAzOTYwLCJuYmYiOjE2OTM0OTE5NjAsImp0aSI6IndrVTV4dERXMEhVc2VTVG8iLCJzdWIiOjEyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.uMHRKINq2BltgqqY72idYPD92m98UTLX5wZGDEnDkpE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{apiUrl}}/api/companies/delete/100",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "companies",
+                "delete",
+                "100"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ShowACompany",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{apiUrl}}/api/companies/show/20",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "companies",
+                "show",
+                "20"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetAllCompanies",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{apiUrl}}/api/companies/list",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "companies",
+                "list"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreateCompany",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5MzQ5MTk2MCwiZXhwIjoxNjk1MDAzOTYwLCJuYmYiOjE2OTM0OTE5NjAsImp0aSI6IndrVTV4dERXMEhVc2VTVG8iLCJzdWIiOjEyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.uMHRKINq2BltgqqY72idYPD92m98UTLX5wZGDEnDkpE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{apiUrl}}/api/companies/create?name=facebook&name_ar=fa&description=asdas&description_ar=asdasd",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "companies",
+                "create"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "facebook"
+                },
+                {
+                  "key": "name_ar",
+                  "value": "fa"
+                },
+                {
+                  "key": "description",
+                  "value": "asdas"
+                },
+                {
+                  "key": "description_ar",
+                  "value": "asdasd"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateCompany",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5MzQ5MTk2MCwiZXhwIjoxNjk1MDAzOTYwLCJuYmYiOjE2OTM0OTE5NjAsImp0aSI6IndrVTV4dERXMEhVc2VTVG8iLCJzdWIiOjEyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.uMHRKINq2BltgqqY72idYPD92m98UTLX5wZGDEnDkpE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "12",
+                  "type": "text"
+                },
+                {
+                  "key": "name_ar",
+                  "value": "asd",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "asd",
+                  "type": "text"
+                },
+                {
+                  "key": "description_ar",
+                  "value": "asdasda",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{apiUrl}}/api/companies/update/200",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "companies",
+                "update",
+                "200"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Slideshow",
+      "item": [
+        {
+          "name": "GetAllslides",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{apiUrl}}/api/slides/list",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "slides",
+                "list"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreateSlideshow",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5MzQ5MTk2MCwiZXhwIjoxNjk1MDAzOTYwLCJuYmYiOjE2OTM0OTE5NjAsImp0aSI6IndrVTV4dERXMEhVc2VTVG8iLCJzdWIiOjEyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.uMHRKINq2BltgqqY72idYPD92m98UTLX5wZGDEnDkpE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "k",
+                  "type": "text"
+                },
+                {
+                  "key": "name_ar",
+                  "value": "k",
+                  "type": "text"
+                },
+                {
+                  "key": "shortdesc",
+                  "value": "ss",
+                  "type": "text"
+                },
+                {
+                  "key": "shortdesc_ar",
+                  "value": "fad",
+                  "type": "text"
+                },
+                {
+                  "key": "customorder",
+                  "value": "2",
+                  "type": "text"
+                },
+                {
+                  "key": "image",
+                  "type": "file",
+                  "src": "/C:/Users/kerol/Downloads/OIP.jpg"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{apiUrl}}/api/slides/create",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "slides",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetASlide",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{apiUrl}}/api/slides/show/100",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "slides",
+                "show",
+                "100"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeleteASlide",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5MzQ5MTk2MCwiZXhwIjoxNjk1MDAzOTYwLCJuYmYiOjE2OTM0OTE5NjAsImp0aSI6IndrVTV4dERXMEhVc2VTVG8iLCJzdWIiOjEyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.uMHRKINq2BltgqqY72idYPD92m98UTLX5wZGDEnDkpE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{apiUrl}}/api/slides/delete/600",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "slides",
+                "delete",
+                "600"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateSlideshow",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5MzQ5MTk2MCwiZXhwIjoxNjk1MDAzOTYwLCJuYmYiOjE2OTM0OTE5NjAsImp0aSI6IndrVTV4dERXMEhVc2VTVG8iLCJzdWIiOjEyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.uMHRKINq2BltgqqY72idYPD92m98UTLX5wZGDEnDkpE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "as",
+                  "type": "text"
+                },
+                {
+                  "key": "name_ar",
+                  "value": "asd",
+                  "type": "text"
+                },
+                {
+                  "key": "shortdesc",
+                  "value": "asdas",
+                  "type": "text"
+                },
+                {
+                  "key": "shortdesc_ar",
+                  "value": "asdasd",
+                  "type": "text"
+                },
+                {
+                  "key": "customorder",
+                  "value": "3",
+                  "type": "text"
+                },
+                {
+                  "key": "image",
+                  "type": "file",
+                  "src": "/C:/Users/kerol/Downloads/OIP (1).jpg"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{apiUrl}}/api/slides/update/2",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "slides",
+                "update",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Favourite",
+      "item": [
+        {
+          "name": "GetMyFavListings",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5Mjc3NjMwOCwiZXhwIjoxNjk0Mjg4MzA4LCJuYmYiOjE2OTI3NzYzMDgsImp0aSI6Im56YzBjWDlYMWFFb25sQWMiLCJzdWIiOjMsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.JLdbh1t6xaWrtsFeJLvCsuoa3v_5mkn32jmBblcEzK0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{apiUrl}}/api/properties/favorites",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "properties",
+                "favorites"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AddFavListing",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY5Mjc3NjMwOCwiZXhwIjoxNjk0Mjg4MzA4LCJuYmYiOjE2OTI3NzYzMDgsImp0aSI6Im56YzBjWDlYMWFFb25sQWMiLCJzdWIiOjMsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.JLdbh1t6xaWrtsFeJLvCsuoa3v_5mkn32jmBblcEzK0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{apiUrl}}/api/properties/add-to-favorite/100",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "api",
+                "properties",
+                "add-to-favorite",
+                "100"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "1",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
